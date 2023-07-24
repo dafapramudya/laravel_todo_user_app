@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
+Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class;
 
 return [
 
@@ -185,4 +186,6 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
+    Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class,
+    'NoCaptcha' => Anhskohbo\NoCaptcha\Facades\NoCaptcha::class
 ];
